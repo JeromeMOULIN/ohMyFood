@@ -4,8 +4,32 @@ footer{
     width: 100%;
     color: white;
     background-color: #353535;
+    >*{
+        margin: 10px 20px;
+    }
     h3{
         font-family: 'Shrikhand';
+        margin-top: 50px;
         font-weight: 100;
+    }
+    li, a{
+        margin: 10px 0;
+        color: white;
+    }
+    i{
+        height: 20px;
+        width: 20px;
+    }
+    @media screen and (min-width: 700px ){
+        flex-direction:row-reverse;
+        align-items: flex-end;
+        height: 114px;
+        ul{
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            margin: 5px 20px;
+        }
     }
 }

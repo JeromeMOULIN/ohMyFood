@@ -1,6 +1,6 @@
 @import '../utils/variables';
 
-button{
+.btn{
     background-color: $hoverFontColor;
     color: white;
     padding: 20px 50px;
@@ -8,4 +8,20 @@ button{
     border-radius: 30px;
     margin: 30px;
     background: linear-gradient(0deg, rgba(147,86,220,1) 4%, rgba(232,156,223,1) 100%);
+}
+.heartButton{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    border-radius: 0 0 20px 0;
+    background-color: white;
+    height: 63px;
+    width: 63px;
+    -webkit-text-stroke: 2px black;
+    color: white;
+    &:active{
+        -webkit-text-fill-color: $hoverFontColor ;
+        -webkit-text-stroke: 1px $hoverFontColor;
+    }
 }
