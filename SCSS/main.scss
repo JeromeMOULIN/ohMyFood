@@ -1,6 +1,7 @@
 @use "./layout/header";
 @use "./layout/navigation";
 @use './components/buttons';
+@use './layout/footer';
 @use './pages/index';
 
 @import "./utils/variables";
@@ -27,3 +28,4 @@ body{
     flex-direction: column;
     align-items: center;
 }
+

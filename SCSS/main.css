@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap");
 header {
   width: 100%;
   height: 4rem;
@@ -23,7 +23,20 @@ button {
   padding: 20px 50px;
   border: none;
   border-radius: 30px;
+  margin: 30px;
   background: linear-gradient(0deg, rgb(147, 86, 220) 4%, rgb(232, 156, 223) 100%);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  background-color: #353535;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  font-weight: 100;
 }
 
 main {
@@ -116,8 +129,60 @@ main {
   border-radius: 25px;
 }
 
-button {
-  margin: 30px;
+.restaurant {
+  width: 100%;
+  background-color: #F6F6F6;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 15px;
+  background-color: #99E2D0;
+  color: #008766;
+}
+
+figure {
+  display: block;
+  position: relative;
+  width: 90%;
+  height: 251px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px 0px;
+}
+figure img {
+  border-radius: 20px 20px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 75%;
+  width: 100%;
+}
+figure a:focus .new {
+  display: none;
+}
+figure .fa-heart {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20%;
+  align-items: center;
+}
+figcaption i, figcaption h3, figcaption p {
+  margin: 0px 20px;
 }
 
 * {
