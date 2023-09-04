@@ -1,0 +1,10 @@
+@import '../utils/variables';
+
+button{
+    background-color: $hoverFontColor;
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(147,86,220,1) 4%, rgba(232,156,223,1) 100%);
+}

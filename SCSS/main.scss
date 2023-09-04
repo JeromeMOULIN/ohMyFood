@@ -1,0 +1,29 @@
+@use "./layout/header";
+@use "./layout/navigation";
+@use './components/buttons';
+@use './pages/index';
+
+@import "./utils/variables";
+@import './base/typography';
+
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    max-width: 100%;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

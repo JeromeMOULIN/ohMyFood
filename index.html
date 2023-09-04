@@ -10,12 +10,12 @@
 <body>
 
     <header>
-        <nav><ul><li><a href="#"><img src="./images/logo/ohmyfood@2x.svg" alt="logo oh my food"></a></li></ul></nav>
+        <nav class="headerNav"><ul><li><a href="./index.html"><img src="./images/logo/ohmyfood@2x.svg" alt="logo oh my food"></a></li></ul></nav>
     </header>
 
     <main>
         <div class="geoloc">
-            <i></i>
+            <i class="fa-solid fa-location-dot"></i>
             <p>Paris, Belleville</p>
         </div>
 
@@ -27,24 +27,33 @@
 
         <section class="functioning">
             <h2>Fonctionnement</h2>
-
-            <article class="function-step">
-                <span class="step">1</span>
-                <i class="fa-solid fa-mobile-screen"></i>
-                <p>Choisissez un restaurant</p>
-            </article>
-
-            <article class="function-step">
-                <span class="step">2</span>
-                <i class="fa-solid fa-list-ul"></i>
-                <p>Composez votre menu</p>
-            </article>
-
-            <article class="function-step">
-                <span class="step">3</span>
-                <i class="fa-solid fa-store"></i>
-                <p>Dégustez au restaurant</p>
-            </article>
+            
+            <div class="steps">
+                <article class="function-step">
+                    <span class="step">1</span>
+                    <div class="step-content">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <p>Choisissez un restaurant</p>
+                    </div>
+                </article>
+                
+                <article class="function-step">
+                    <span class="step">2</span>
+                    <div class="step-content">
+    
+                        <i class="fa-solid fa-list-ul"></i>
+                        <p>Composez votre menu</p>
+                    </div>
+                </article>
+                
+                <article class="function-step">
+                    <span class="step">3</span>
+                    <div class="step-content">
+                        <i class="fa-solid fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                    </div>
+                </article>
+            </div>
 
         </section>
 
