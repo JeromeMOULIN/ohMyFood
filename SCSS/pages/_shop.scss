@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    top: -30px;
     border-radius: 20px 20px 0px 0px;
     background-color: $secondary-backgroundColor;
     max-width: 1055px;
@@ -17,7 +19,15 @@
 }
 .menu-header{
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+    h2{
+        font-family: 'Shrikhand';
+        font-weight: 300;
+    }
 }
 .menu-card{
     display: flex;
@@ -30,12 +40,32 @@ fieldset{
     border: none;
     width: 100%;
     max-width: 634px;
+    legend{
+        text-transform: uppercase ;
+        font-weight: 100;
+    }
 }
 .mini-card{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: white;
     border-radius: 15px;
-    margin: 10px;
-    box-shadow: 0px 2px 15px -5px rgba(0,0,0,0.46)
+    margin:  10px 0;
+    box-shadow: 0px 2px 15px -5px rgba(0,0,0,0.46);
+    label{
+        position: relative;
+        padding: 10px;
+        width: 100%;
+        span{
+            position:absolute;
+            bottom: 10px;
+            right: 0;
+        }
+    }
+    .checkbox{
+        border: 0;
+        position: relative;
+        color: green;
+    }
 }
