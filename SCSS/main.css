@@ -9,12 +9,20 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .headerNav ul {
+  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.arrow {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  margin: 0 20px;
 }
 
 .btn {
@@ -67,7 +75,7 @@ footer i {
   height: 20px;
   width: 20px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 878px) {
   footer {
     flex-direction: row-reverse;
     align-items: flex-end;
@@ -80,12 +88,6 @@ footer i {
   footer li {
     margin: 5px 20px;
   }
-}
-
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .geoloc {
@@ -106,6 +108,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   background-color: #F6F6F6;
   padding-top: 20px;
 }
@@ -123,6 +126,25 @@ main {
 .functioning h2 {
   padding: 20px;
 }
+@media screen and (min-width: 878px) {
+  .functioning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.functioning-content {
+  width: 100%;
+}
+@media screen and (min-width: 878px) {
+  .functioning-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+  }
+}
 
 .steps {
   height: 100%;
@@ -131,10 +153,10 @@ main {
   align-items: center;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 878px) {
   .steps {
     flex-direction: row;
-    justify-content: space-around;
+    width: 100%;
   }
 }
 
@@ -154,9 +176,9 @@ main {
 .function-step i {
   color: gray;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 878px) {
   .function-step {
-    width: 30%;
+    width: 100%;
   }
 }
 
@@ -188,10 +210,29 @@ main {
   width: 100%;
   height: 100%;
   background-color: #F6F6F6;
-  margin-bottom: 50px;
 }
 .restaurant h2 {
   margin: 50px 0px 20px 35px;
+}
+@media screen and (min-width: 878px) {
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.restaurant-content {
+  width: 100%;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 878px) {
+  .restaurant-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+  }
 }
 
 .cards {
@@ -199,7 +240,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 878px) {
   .cards {
     flex-direction: row;
     justify-content: space-around;
@@ -235,7 +276,7 @@ figure img {
 figure a:visited .new {
   display: none;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 878px) {
   figure {
     width: 40%;
   }
@@ -258,6 +299,52 @@ figcaption p {
   font-weight: 100;
 }
 
+.img-bg-shop {
+  box-shadow: 0px 2px 15px -5px rgba(0, 0, 0, 0.46) inset;
+  max-height: 383px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.shop-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #F6F6F6;
+  max-width: 1055px;
+  width: 100%;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+  max-width: 634px;
+}
+
+.mini-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0px 2px 15px -5px rgba(0, 0, 0, 0.46);
+}
+
 * {
   margin: 0;
   padding: 0px;
@@ -278,6 +365,13 @@ img {
 }
 
 body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
   width: 100%;
   display: flex;
   flex-direction: column;

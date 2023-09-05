@@ -3,6 +3,7 @@
 @use './components/buttons';
 @use './layout/footer';
 @use './pages/index';
+@use './pages/shop';
 
 @import "./utils/variables";
 @import './base/typography';
@@ -23,6 +24,12 @@ img{
     max-width: 100%;
 }
 body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
     width: 100%;
     display: flex;
     flex-direction: column;
