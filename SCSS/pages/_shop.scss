@@ -38,7 +38,7 @@
 }
 fieldset{
     border: none;
-    width: 100%;
+    width: 95%;
     max-width: 634px;
     legend{
         text-transform: uppercase ;
@@ -51,7 +51,7 @@ fieldset{
     justify-content: space-between;
     background-color: white;
     border-radius: 15px;
-    margin:  10px 0;
+    margin:  10px 0px;
     box-shadow: 0px 2px 15px -5px rgba(0,0,0,0.46);
     label{
         position: relative;
@@ -68,4 +68,7 @@ fieldset{
         position: relative;
         color: green;
     }
+}
+.heartButtonShop{
+    background-color:$secondary-backgroundColor;
 }
