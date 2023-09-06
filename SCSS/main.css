@@ -330,7 +330,7 @@ figcaption p {
   gap: 30px;
   margin: 30px;
 }
-.menu-header h2 {
+.menu-header h1 {
   font-family: "Shrikhand";
   font-weight: 300;
 }
@@ -341,6 +341,9 @@ figcaption p {
   align-items: center;
   width: 100%;
   gap: 30px;
+}
+.menu-card h2 {
+  font-size: medium;
 }
 
 fieldset {

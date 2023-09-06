@@ -24,7 +24,7 @@
     align-items: center;
     gap: 30px;
     margin: 30px;
-    h2{
+    h1{
         font-family: 'Shrikhand';
         font-weight: 300;
     }
@@ -35,6 +35,9 @@
     align-items: center;
     width: 100%;
     gap: 30px;
+    h2{
+        font-size: medium;
+    }
 }
 fieldset{
     border: none;
