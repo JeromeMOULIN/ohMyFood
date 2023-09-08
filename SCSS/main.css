@@ -344,12 +344,12 @@ figcaption p {
   font-size: medium;
 }
 
-fieldset {
+.fieldset {
   border: none;
   width: 95%;
   max-width: 634px;
 }
-fieldset legend {
+.fieldset h2 {
   text-transform: uppercase;
   font-weight: 100;
 }
@@ -363,12 +363,12 @@ fieldset legend {
   margin: 10px 0px;
   box-shadow: 0px 2px 15px -5px rgba(0, 0, 0, 0.46);
 }
-.mini-card label {
+.mini-card div {
   position: relative;
   padding: 10px;
   width: 100%;
 }
-.mini-card label span {
+.mini-card div span {
   position: absolute;
   bottom: 10px;
   right: 0;
