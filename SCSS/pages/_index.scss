@@ -69,7 +69,7 @@
     align-items: center;
     width: 90%;
     height: 72px;
-    margin: 10px;
+    margin: 20px;
     background-color: $secondary-backgroundColor;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -162,11 +162,6 @@ figure{
         object-fit: cover;
         height: 75% ;
         width: 100%;
-    }
-    a:visited{
-        .new{
-            display: none;
-        }
     }
     @media screen and (min-width: 878px ){
         width: 40%;
