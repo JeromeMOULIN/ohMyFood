@@ -1,5 +1,7 @@
 
 @import '../utils/variables';
+@import '../utils/keyframes';
+@import '../utils/mixins';
 //style index
 
 
@@ -167,11 +169,38 @@ figure{
         width: 40%;
     }
 }
+
 .heartButtonIndex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 0;
     right: 0;
+    border-radius: 20px;
     background-color: white;
+    @include fillHeart;
+    input{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        width: 63px;
+        height: 63px;
+        cursor: pointer;
+    }
+    input[type="checkbox"] ~ i{
+        height: 63px;
+        width: 63px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type="checkbox"]:checked ~ i {
+        animation: animeHeart 0.2s;
+        -webkit-text-fill-color: $hoverFontColor;
+        -webkit-text-stroke: 0px;
+    }
 }
 figcaption{
     display: flex;

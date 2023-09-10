@@ -17,15 +17,3 @@
         transform :scale(0.95) translateY(5px);
     }
 }
-.heartButton{
-    border: none;
-    border-radius: 0 0 20px 0;
-    height: 63px;
-    width: 63px;
-    -webkit-text-stroke: 2px black;
-    color: white;
-    &:active{
-        -webkit-text-fill-color: $hoverFontColor ;
-        -webkit-text-stroke: 1px $hoverFontColor;
-    }
-}
