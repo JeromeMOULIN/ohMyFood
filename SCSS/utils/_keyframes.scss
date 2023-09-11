@@ -21,19 +21,23 @@
 // Hidding Loader
 @keyframes hideLoader{
     0%{
+        visibility: visible;
         display: flex;
     }
     100%{
+        visibility: collapse;
         display: none;
     }
 };
 // Showing content
 @keyframes showContent{
     0%{
+        visibility: collapse;
         display: none;
         opacity: 0;
     }
     100%{
+        visibility: visible;
         display: flex;
         opacity: 1;
     }
