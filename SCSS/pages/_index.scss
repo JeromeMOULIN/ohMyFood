@@ -13,13 +13,16 @@
     animation: hideLoader 3s forwards;
     h1{
         font-family: 'Shrikhand';
-        background-color: $hoverFontColor;
+        padding-right: 6px;
         animation: animeLoader 3s;
         font-size: 10vw;
         background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: transparent;
         -webkit-text-stroke: 0.5px black;
+        background-image: linear-gradient(to top, $hoverFontColor 50%, transparent 50% );
+        background-size: 1% 200%;
+        animation: animeLoader 3s forwards;
         @media screen and (min-width:878px){
             font-size: 150px;
         }

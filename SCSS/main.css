@@ -92,28 +92,10 @@ footer i {
 }
 @keyframes animeLoader {
   0% {
-    background-image: linear-gradient(#ffffff 90%, #9356DC 10%);
-  }
-  10% {
-    background-image: linear-gradient(#ffffff 80%, #9356DC 20%);
-  }
-  30% {
-    background-image: linear-gradient(#ffffff 70%, #9356DC 30%);
-  }
-  50% {
-    background-image: linear-gradient(#ffffff 50%, #9356DC 50%);
-  }
-  70% {
-    background-image: linear-gradient(#ffffff 30%, #9356DC 70%);
-  }
-  80% {
-    background-image: linear-gradient(#ffffff 20%, #9356DC 80%);
-  }
-  90% {
-    background-image: linear-gradient(#ffffff 10%, #9356DC 90%);
+    background-position: 0 0;
   }
   100% {
-    background-image: linear-gradient(#ffffff 0%, #9356DC 100%);
+    background-position: 0 100%;
   }
 }
 @keyframes hideLoader {
@@ -144,13 +126,16 @@ footer i {
 }
 .loader h1 {
   font-family: "Shrikhand";
-  background-color: #9356DC;
+  padding-right: 6px;
   animation: animeLoader 3s;
   font-size: 10vw;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-text-stroke: 0.5px black;
+  background-image: linear-gradient(to top, #9356DC 50%, transparent 50%);
+  background-size: 1% 200%;
+  animation: animeLoader 3s forwards;
 }
 @media screen and (min-width: 878px) {
   .loader h1 {
