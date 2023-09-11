@@ -90,6 +90,79 @@ footer i {
     transform: scale(1);
   }
 }
+@keyframes animeLoader {
+  0% {
+    background-image: linear-gradient(#ffffff 90%, #9356DC 10%);
+  }
+  10% {
+    background-image: linear-gradient(#ffffff 80%, #9356DC 20%);
+  }
+  30% {
+    background-image: linear-gradient(#ffffff 70%, #9356DC 30%);
+  }
+  50% {
+    background-image: linear-gradient(#ffffff 50%, #9356DC 50%);
+  }
+  70% {
+    background-image: linear-gradient(#ffffff 30%, #9356DC 70%);
+  }
+  80% {
+    background-image: linear-gradient(#ffffff 20%, #9356DC 80%);
+  }
+  90% {
+    background-image: linear-gradient(#ffffff 10%, #9356DC 90%);
+  }
+  100% {
+    background-image: linear-gradient(#ffffff 0%, #9356DC 100%);
+  }
+}
+@keyframes hideLoader {
+  0% {
+    display: flex;
+  }
+  100% {
+    display: none;
+  }
+}
+@keyframes showContent {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: flex;
+    opacity: 1;
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100vh;
+  animation: hideLoader 3s forwards;
+}
+.loader h1 {
+  font-family: "Shrikhand";
+  background-color: #9356DC;
+  animation: animeLoader 3s;
+  font-size: 10vw;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px black;
+}
+@media screen and (min-width: 878px) {
+  .loader h1 {
+    font-size: 150px;
+  }
+}
+
+.mainIndex, .mainHeader, .mainFooter {
+  animation-delay: 3s;
+  animation: showContent 3s 3s backwards;
+}
+
 .geoloc {
   width: 100%;
   height: 3.125rem;

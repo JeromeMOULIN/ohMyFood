@@ -3,8 +3,32 @@
 @import '../utils/keyframes';
 @import '../utils/mixins';
 //style index
-
-
+// LOADER ANIMATION
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    animation: hideLoader 3s forwards;
+    h1{
+        font-family: 'Shrikhand';
+        background-color: $hoverFontColor;
+        animation: animeLoader 3s;
+        font-size: 10vw;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0.5px black;
+        @media screen and (min-width:878px){
+            font-size: 150px;
+        }
+    }
+}
+.mainIndex, .mainHeader, .mainFooter{
+    animation-delay: 3s;
+    animation: showContent 3s 3s backwards;
+}
 //header hero
 .geoloc{
     width: 100%;
