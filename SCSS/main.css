@@ -318,6 +318,19 @@ footer i {
   }
 }
 
+.card {
+  width: 80%;
+  display: block;
+  position: relative;
+  margin: 10px 0px;
+}
+@media screen and (min-width: 878px) {
+  .card {
+    gap: 10px;
+    width: 40%;
+  }
+}
+
 .new {
   position: absolute;
   top: 15px;
@@ -330,11 +343,10 @@ footer i {
 figure {
   display: block;
   position: relative;
-  width: 90%;
+  width: 100%;
   height: 251px;
   background-color: white;
   border-radius: 20px;
-  margin: 10px 0px;
 }
 figure img {
   border-radius: 20px 20px 0px 0px;
@@ -342,11 +354,6 @@ figure img {
      object-fit: cover;
   height: 75%;
   width: 100%;
-}
-@media screen and (min-width: 878px) {
-  figure {
-    width: 40%;
-  }
 }
 
 .heartButtonIndex {

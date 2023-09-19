@@ -52,8 +52,7 @@
     input[type="checkbox"]:checked ~ i {
         animation: animeHeart 0.2s backwards;
         -webkit-text-fill-color: $hoverFontColor;
-        -webkit-text-stroke: 0px;
-        
+        -webkit-text-stroke: 0px;     
     }
 }
 .menu-card{
